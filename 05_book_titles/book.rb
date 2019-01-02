@@ -3,7 +3,7 @@ class Book
     @title = ""
   end
 
-  def title phrase
+  def title=(phrase)
     phrase = phrase.downcase
     phrase_arr = phrase.split(' ')
 
