@@ -1,8 +1,14 @@
 class Timer
-  attr_accessor :seconds
+  def initialize
+    @seconds = 0
+  end
 
-  def seconds seconds=0
-    @seconds=seconds
+  def seconds newSeconds=nil
+    if newSeconds==nil
+      @seconds
+    else
+      @seconds=newSeconds
+    end
   end
 
   def time_string
