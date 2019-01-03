@@ -1,6 +1,6 @@
 class Book
-  def initialize
-    @title = ""
+  def title
+    @title
   end
 
   def title=(phrase)
@@ -17,7 +17,7 @@ class Book
         phrase_arr[i] = word.capitalize
       end
       if word == "i"
-        prase_arr[i] = "I"
+        phrase_arr[i] = "I"
       end
     end
     @title = phrase_arr.join(' ')
